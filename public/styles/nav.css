@@ -4,7 +4,7 @@
 
  .navbar {
   display: flex;
-  height: 120px;
+  height: 60px;
   background-color: #4056A1;
   color: #FFFFFF;
   padding: 0 1.5em;
@@ -14,7 +14,7 @@
   width: 100%;
  }
 
- .new-tweet {
+ .right-nav {
   display: flex;
   flex-direction: column;
   align-items: center;
