@@ -21,10 +21,11 @@ body {
   font-family: Source Sans Pro, sans-serif;
 }
 
+.container {
+  width: 90%;
+  justify-content: center;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-
- #logo {
-  font-family: bungee, sans-serif;
- }
