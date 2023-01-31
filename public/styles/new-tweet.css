@@ -1,3 +1,11 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 20px;
+  width: 40%;
+}
+
 #tweet-heading {
   color:#001fe6;
 }
@@ -5,9 +13,8 @@
 
 form {
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
   justify-content: space-between;
+  flex-direction: column;
 }
 
 .new-tweet {
@@ -22,6 +29,7 @@ form {
   justify-content: space-between;
   border-bottom: 10px solid #001fe6;
   padding-bottom: 5px;
+  align-items: center;
 }
 
 .bottom-tweet {
@@ -32,13 +40,15 @@ form {
   align-items: center;
 }
 
-textarea {
+#tweet-text {
   display: flex;
+  border: hidden;
   border-bottom: solid black;
   padding-bottom: 5px;
   flex-direction: row;
-}
+  width: 50%;
 
+}
 
 #tweet-button {
   background-color: royalblue;
