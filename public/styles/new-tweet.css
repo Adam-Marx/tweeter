@@ -52,6 +52,14 @@ form {
   color: #FFFFFF;
 }
 
+#tweet-button:hover {
+  filter: brightness(130%);
+}
+
+#tweet-button:active {
+  transform: scale(0.95);
+}
+
 .counter {
   display: flex;
   justify-content: flex-end;
