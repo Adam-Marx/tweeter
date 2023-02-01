@@ -1,9 +1,8 @@
 .new-tweet {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 20px;
-  width: 40%;
+  margin-top: 20px;
+  width: 100%;
 }
 
 #tweet-heading {
@@ -19,11 +18,15 @@ form {
 
 .top-tweet {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   border-bottom: 10px solid #001fe6;
   padding-bottom: 10px;
-  align-items: center;
+  align-items: left;
+  margin-bottom: 20px;
+}
+
+.top-tweet label {
   margin-bottom: 20px;
 }
 
@@ -38,11 +41,8 @@ form {
 #tweet-text {
   display: flex;
   border: hidden;
-  border-bottom: solid black;
   padding-bottom: 5px;
   flex-direction: row;
-  width: 50%;
-
 }
 
 #tweet-button {
