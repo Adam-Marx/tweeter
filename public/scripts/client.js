@@ -8,8 +8,8 @@ $(document).ready( function () {
 
   // HIDE ERROR MESSAGE ELEMENT
   $('#error-message').hide();
-  
 
+  //ESCAPE MALICIOUS JAVASCRIPT
   const escape = function(str) {
     let span = document.createElement("span");
     span.appendChild(document.createTextNode(str));
@@ -43,6 +43,7 @@ $(document).ready( function () {
 
   
   const renderTweets = (tweets) => {
+      $('#tweets-container').empty();
       for (const tweet of tweets) {
         const $returnValue = createTweetElement(tweet);
         $('#tweets-container').prepend($returnValue);
@@ -73,16 +74,19 @@ $(document).ready( function () {
     const max = 140;
     const text = $('#tweet-text').val();
 
-    $('#error-message').slideUp();
+    $('#error-message').slideUp('slow');
+
+   
+
+    const $errorSymbol = $('<i class="fa fa-exclamation-triangle"></i>');
 
     if (!text) {
-      return $('#error-message').slideDown('slow').text(`Please do not leave this field empty.`).show();
+      return $('#error-message').slideDown('slow').html(`${$errorSymbol[0].outerHTML} Please do not leave this field empty.`).show();
     } else if (text.length > max) {
-      return $('#error-message').slideDown('slow').text(`Your tweet has exceeded the character limit of ${max}. Please shorten your tweet.`).show();
+      return $('#error-message').slideDown('slow').html(`${$errorSymbol[0].outerHTML} Your tweet has exceeded the character limit of ${max}. Please shorten your tweet.`).show();
     } else {
-      $('#error-message').slideUp();
+      $('#error-message').slideUp('slow');
     }
-  
 
 
     const tweetData = $(this).serialize();
