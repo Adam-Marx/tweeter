@@ -1,4 +1,4 @@
-.tweets {
+#tweet {
   overflow: auto;
   margin: 20px 0;
   width: 100%;
@@ -6,12 +6,13 @@
   padding-bottom: 20px;
 }
 
-.tweets:hover {
+#tweet:hover {
   box-shadow: 10px 10px 7px gray;
 }
 
 .tweets-headings {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   padding: 0 25px;
 }
@@ -20,14 +21,14 @@
   color: lightgray;
 }
 
-#tweet {
+.tweet-content {
   padding: 0 25px;
   padding-bottom: 20px;
   border-bottom: solid 1px lightgray;
   margin-bottom: 20px;
 }
 
-.tweets footer {
+#tweet footer {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
