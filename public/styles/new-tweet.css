@@ -5,11 +5,6 @@
   width: 100%;
 }
 
-#tweet-heading {
-  color:#001fe6;
-}
-
-
 form {
   display: flex;
   justify-content: space-between;
@@ -20,10 +15,11 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom: 10px solid #001fe6;
-  padding-bottom: 10px;
+  border-bottom: 5px solid #001fe6;
+  padding-bottom: 5px;
   align-items: left;
   margin-bottom: 20px;
+  position: relative;
 }
 
 .top-tweet label {
@@ -39,6 +35,10 @@ form {
 }
 
 #humming {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
   color: white;
   font-size: 30px;
   text-shadow: 2px 2px 2px black;
@@ -49,6 +49,16 @@ form {
   border: hidden;
   padding-bottom: 5px;
   flex-direction: row;
+  background-color: #0099d1;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  z-index: 1;
+}
+
+textarea#tweet-text {
+  color: white;
+  font-size: 30px;
+  height: 100%;
+  font-weight: bold;
 }
 
 #tweet-button {
@@ -70,7 +80,9 @@ form {
   display: flex;
   justify-content: flex-end;
   font-weight: 600;
-  color: blue;
+  color: white;
+  font-family: bungee, sans-serif;
+  text-shadow: #001fe6 4px 4px 2px;
 }
 
 .red {
