@@ -5,13 +5,13 @@
  .navbar {
   display: flex;
   height: 60px;
-  background-color: #4056A1;
   color: #FFFFFF;
   padding: 0 1.5em;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
   width: 100%;
+  background-color: #001fe6;
+  background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
  }
 
  .right-nav {
@@ -24,3 +24,10 @@
   color:#800020;
  }
 
+@media only screen and (min-width: 768px) {
+  .navbar {
+  background-image: none;
+  background-color: #4056A1;
+  position: fixed;
+  }
+}

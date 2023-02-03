@@ -9,3 +9,13 @@
   background-color: #001fe6;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
 }
+
+@media only screen and (min-width: 768px) {
+  #profile-header {
+  grid-area: header; /* assign header to its grid area */
+    width: 100%;
+    max-width: 100%;
+    margin-left: 2em;
+    margin-top: 10em;
+  }
+}
