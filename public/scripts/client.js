@@ -9,6 +9,11 @@ $(document).ready( function () {
   // HIDE ERROR MESSAGE ELEMENT
   $('#error-message').hide();
 
+  // DOUBLE ARROW DOWN SLIDES DOWN / UP NEW TWEET FORM
+  $('.double-arrows').on('click', function() {
+    $('.new-tweet').slideToggle();
+    });
+
   // WHAT ARE YOU HUMMING ABOUT?
   $('#tweet-text').on('focus', function() {
     if (!$(this).hasClass('typing')) {

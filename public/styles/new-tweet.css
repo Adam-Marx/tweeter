@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-top: 20px;
   width: 100%;
+  display: none;
 }
 
 form {
@@ -43,6 +44,7 @@ form {
   color: white;
   font-size: 30px;
   text-shadow: 2px 2px 2px black;
+  z-index: 2;
 }
 
 #tweet-text {
@@ -101,4 +103,8 @@ textarea#tweet-text {
   padding: 10px;
   margin: 10px;
   width: 60%;
+}
+
+.double-arrows {
+  cursor: pointer;
 }
