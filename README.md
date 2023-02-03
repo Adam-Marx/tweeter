@@ -14,7 +14,7 @@ This is the default view of Tweeter on desktop. It makes use of the larger horiz
 
 !["Tweeter on other devices"](https://github.com/Adam-Marx/tweeter/blob/master/docs/tweeter-mobile.png?raw=true)
 
-One of Tweeters most important design choices was to use Responsive Web Design to adjust the way it presents the HTML depending on the size of the screen of the user.
+One of Tweeter's most important design choices was to use Responsive Web Design to adjust the way it presents the HTML depending on the size of the user's screen.
 
 !["Error message"](https://github.com/Adam-Marx/tweeter/blob/master/docs/tweeter-error.png?raw=true)
 
