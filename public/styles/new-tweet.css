@@ -38,6 +38,12 @@ form {
   align-items: center;
 }
 
+#humming {
+  color: white;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px black;
+}
+
 #tweet-text {
   display: flex;
   border: hidden;

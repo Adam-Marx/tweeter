@@ -4,25 +4,36 @@
   width: 100%;
   border: 5px solid black;
   padding-bottom: 20px;
+  background-color: #f4f1ec;
 }
 
 #tweet:hover {
-  box-shadow: 10px 10px 7px gray;
+  box-shadow: 7px 7px 7px black;
 }
 
 .tweets-headings {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0 25px;
+  align-items: center;
+}
+
+
+#name-avatar {
+  display: flex;
+  flex-direction: row;
+  padding-left: 5%;
+  align-items: center;
 }
 
 #username {
+  padding-right: 5%;
   color: lightgray;
 }
 
 .tweet-content {
   padding: 0 25px;
+  padding-top: 50px;
   padding-bottom: 20px;
   border-bottom: solid 1px lightgray;
   margin-bottom: 20px;
@@ -38,4 +49,14 @@
 
 #icons i:hover {
   color: goldenrod;
+}
+
+@media only screen and (min-width: 768px) {
+  .tweets-headings {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+  justify-content: space-between;
+  }
 }

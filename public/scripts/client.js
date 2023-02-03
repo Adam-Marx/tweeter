@@ -22,8 +22,13 @@ $(document).ready( function () {
     <article id="tweet">
 
     <header class="tweets-headings">
-      <h4>${tweet.user.name}</h4>
-      <h4 id="username">${tweet.user.handle}</h4>
+      <div id="name-avatar">
+        <img src="${tweet.user.avatars}"></img> 
+        <h4>${tweet.user.name}</h4>
+      </div>
+      <div id="username">
+      <h4>${tweet.user.handle}</h4>
+      </div>
     </header>
 
     <div class="tweet-content">
