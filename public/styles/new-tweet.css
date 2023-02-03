@@ -97,13 +97,20 @@ textarea#tweet-text {
 }
 
 #error-message {
-  color:red;
+  display: flex;
+  justify-content: center;
+  color:white;
   font-size: 20;
+  font-weight: bold;
+  text-shadow: black 3px 3px 3px;
   border: solid red;
   padding: 10px;
   margin: 10px;
-  width: 60%;
+  width: 80%;
+  background-color: #d60000;
+  background-image: url("https://www.transparenttextures.com/patterns/brick-wall-dark.png");
 }
+
 
 .double-arrows {
   cursor: pointer;
