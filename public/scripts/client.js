@@ -119,7 +119,7 @@ $(document).ready( function () {
     .then(function(res) {
       console.log('Tweet sent successfully:', res);
       loadTweets();
-      $('#tweet-text').empty();
+      $('#tweet-text').val('')
     })
     .catch(function(err) {
       console.error('Error sending tweet to server:', err);
