@@ -10,9 +10,9 @@ $(document).ready(function () {
     counter.text(remaining);
     
     if (remaining < 0) {
-      counter.addClass('red') 
+      counter.addClass('red');
     } else {
-      counter.removeClass('red')
+      counter.removeClass('red');
     }
 
   });
