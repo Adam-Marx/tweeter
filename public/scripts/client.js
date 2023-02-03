@@ -9,6 +9,21 @@ $(document).ready( function () {
   // HIDE ERROR MESSAGE ELEMENT
   $('#error-message').hide();
 
+  // WHAT ARE YOU HUMMING ABOUT?
+  $('#tweet-text').on('focus', function() {
+    if (!$(this).hasClass('typing')) {
+      $('#humming').hide();
+      $(this).addClass('typing');
+    }
+  });
+  
+  $('#tweet-text').on('blur', function() {
+    if ($(this).val().length === 0) {
+      $('#humming').show();
+      $(this).removeClass('typing');
+    }
+  });
+
   //ESCAPE MALICIOUS JAVASCRIPT
   const escape = function(str) {
     let span = document.createElement("span");
@@ -104,6 +119,7 @@ $(document).ready( function () {
     .then(function(res) {
       console.log('Tweet sent successfully:', res);
       loadTweets();
+      $('#tweet-text').empty();
     })
     .catch(function(err) {
       console.error('Error sending tweet to server:', err);
