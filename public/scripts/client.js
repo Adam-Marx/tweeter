@@ -9,9 +9,10 @@ $(document).ready( function () {
   // HIDE ERROR MESSAGE ELEMENT
   $('#error-message').hide();
 
-  // DOUBLE ARROW DOWN SLIDES DOWN / UP NEW TWEET FORM
+  // DOUBLE ARROW SLIDES DOWN / UP NEW TWEET FORM
   $('.double-arrows').on('click', function() {
     $('.new-tweet').slideToggle();
+    $('#tweet-text').focus();
     });
 
   // WHAT ARE YOU HUMMING ABOUT?
@@ -124,7 +125,7 @@ $(document).ready( function () {
     .then(function(res) {
       console.log('Tweet sent successfully:', res);
       loadTweets();
-      $('#tweet-text').val('')
+      $('#tweet-text').val('');
     })
     .catch(function(err) {
       console.error('Error sending tweet to server:', err);
