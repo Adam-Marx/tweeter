@@ -12,6 +12,7 @@
   width: 100%;
   background-color: #001fe6;
   background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+  z-index: 1000;
  }
 
  .right-nav {
