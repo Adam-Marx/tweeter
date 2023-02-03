@@ -23,10 +23,6 @@ body {
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
-
-
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
-
 main {
   width: 90%;
   margin: 0 auto;
@@ -60,48 +56,11 @@ main {
   }
 }
 
+/* AlWAYS A SCROLL BAR NO MATTER WHAT I TRY */
+
 /* @media only screen and (min-width: 1024px) {
   main {
-    max-width: 10px;
-  }
-} */
-
-/* Desktop styles */
-/* @media only screen and (min-width: 1024px) {
-  .hero {
-    width: 33.3%;
-    float: left;
-  }
-
-  .feature {
-    line-height: 300px;
-  }
-
-  .menu {
-    background-color: #111111;
-    color: #f0f0f0;
-    text-align: left;
-  }
-
-  .tagline {
-    display: inline;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 12px;
-    color: tomato;
-    float: right;
-  }
-
-  .main {
     max-width: 1024px;
-    font-size: 16px;
     margin: 0 auto;
   }
 } */
-
-
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
