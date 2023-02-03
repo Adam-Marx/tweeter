@@ -19,7 +19,7 @@ body {
   background-color: #0099d1;
   font-size: 24px;
   font-family: Source Sans Pro, sans-serif;
-  width: 100vw;
+  width: 100%;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
@@ -33,7 +33,7 @@ main {
   flex-direction: column;
 }
 
-
+/* GRID PROPERTIES FOR PROPER TEMPLATING */
 @media only screen and (min-width: 768px) {
   body {
     display: grid;

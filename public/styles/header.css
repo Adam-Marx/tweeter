@@ -12,7 +12,7 @@
 
 @media only screen and (min-width: 768px) {
   #profile-header {
-  grid-area: header; /* assign header to its grid area */
+  grid-area: header; 
     width: 100%;
     max-width: 100%;
     margin-left: 2em;
