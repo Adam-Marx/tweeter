@@ -20,6 +20,7 @@ form {
   align-items: left;
   margin-bottom: 20px;
   position: relative;
+  height: 50%;
 }
 
 .top-tweet label {
@@ -59,6 +60,10 @@ textarea#tweet-text {
   font-size: 30px;
   height: 100%;
   font-weight: bold;
+  text-indent: 10px
+}
+textarea#tweet-text {
+  outline: none;
 }
 
 #tweet-button {
