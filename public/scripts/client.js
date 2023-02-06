@@ -126,6 +126,8 @@ $(document).ready( function () {
       console.log('Tweet sent successfully:', res);
       loadTweets();
       $('#tweet-text').val('');
+      $('#humming').show();
+      $('#tweet-text').removeClass('typing');
     })
     .catch(function(err) {
       console.error('Error sending tweet to server:', err);
